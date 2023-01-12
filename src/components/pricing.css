@@ -1,0 +1,18 @@
+.div{
+    background-image: url("https://media.istockphoto.com/id/1397493012/photo/3d-digital-circular-dynamic-wave-technology-wave-seamless-flow-digital-structure-cyber.jpg?s=612x612&w=0&k=20&c=2o05JERhsFGCULcTtUI7PVL2PgoYwFdY3A2fgLZHTsc=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.price{
+    color: rgb(255, 7, 7);
+    font-size: xx-large;
+}
+
+.asd{
+    margin-top: 2rem;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

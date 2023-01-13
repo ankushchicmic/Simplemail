@@ -1,17 +1,25 @@
-.div{
-    background-image: url("https://media.istockphoto.com/id/1397493012/photo/3d-digital-circular-dynamic-wave-technology-wave-seamless-flow-digital-structure-cyber.jpg?s=612x612&w=0&k=20&c=2o05JERhsFGCULcTtUI7PVL2PgoYwFdY3A2fgLZHTsc=");
+.div {
+    /* background-image: url("https://media.istockphoto.com/id/1397493012/photo/3d-digital-circular-dynamic-wave-technology-wave-seamless-flow-digital-structure-cyber.jpg?s=612x612&w=0&k=20&c=2o05JERhsFGCULcTtUI7PVL2PgoYwFdY3A2fgLZHTsc="); */
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #D0BB9D;
 }
-.price{
-    color: rgb(255, 7, 7);
+
+.price {
+    color: #130B0F;
     font-size: xx-large;
 }
 
-.asd{
+.asd {
     margin-top: 2rem;
 }
-.row{
+
+ul {
+    height: 15vw;
+}
+
+
+.row {
     display: flex;
     justify-content: center;
     align-items: center;

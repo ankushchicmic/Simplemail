@@ -2,7 +2,11 @@
     /* background-image: url("https://media.istockphoto.com/id/1397493012/photo/3d-digital-circular-dynamic-wave-technology-wave-seamless-flow-digital-structure-cyber.jpg?s=612x612&w=0&k=20&c=2o05JERhsFGCULcTtUI7PVL2PgoYwFdY3A2fgLZHTsc="); */
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #D0BB9D;
+
+    background-color:  #D0BB9D;
+
+   
+
 }
 
 .price {
@@ -14,8 +18,11 @@
     margin-top: 2rem;
 }
 
-ul {
-    height: 15vw;
+
+.card-body{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
 }
 
 
@@ -23,4 +30,9 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
+
+
+

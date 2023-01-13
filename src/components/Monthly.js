@@ -52,12 +52,12 @@ const PayPalButton = () => {
               "client-id": "AdvvMAUbk5-ZygBTbbv_IUyV-Cy0upeEJU7gax9fFA1czPezd8rlYxZedTDLNpz10R-HxKiiNkqACgXB",
             }}
           >
-            <PayPalButtons className='pay' style={{ layout: "horizontal" }} />
-            {/* <PayPalButtons
-              style={{ layout: "vertical" }}
+            {/* <PayPalButtons className='pay' style={{ layout: "horizontal" }} /> */}
+            <PayPalButtons
+              style={{ layout: "horizontal" }}
               createOrder={createOrder}
               onApprove={onApprove}
-            /> */}
+            />
           </PayPalScriptProvider>
         </div>
 

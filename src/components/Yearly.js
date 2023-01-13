@@ -13,7 +13,9 @@ const YearlyPayPalButton = () => {
       .create({
         purchase_units: [
           {
-            description: "monthly subscription",
+
+            description: "yearly subscription",
+
             amount: {
               currency_code: "USD",
               value: 70,
@@ -52,12 +54,12 @@ const YearlyPayPalButton = () => {
               "client-id": "AdvvMAUbk5-ZygBTbbv_IUyV-Cy0upeEJU7gax9fFA1czPezd8rlYxZedTDLNpz10R-HxKiiNkqACgXB",
             }}
           >
-            <PayPalButtons style={{ layout: "horizontal" }} />
-            {/* <PayPalButtons
-              style={{ layout: "vertical" }}
+            {/* <PayPalButtons style={{ layout: "horizontal" }} /> */}
+            <PayPalButtons
+              style={{ layout: "horizontal" }}
               createOrder={createOrder}
               onApprove={onApprove}
-            /> */}
+            />
           </PayPalScriptProvider>
         </div>
 
@@ -68,4 +70,6 @@ const YearlyPayPalButton = () => {
   )
 };
 
+
 export default YearlyPayPalButton;
+

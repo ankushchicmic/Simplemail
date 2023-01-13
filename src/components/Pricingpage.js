@@ -8,10 +8,13 @@ import { useNavigate } from 'react-router-dom';
 const PricingPage = () => {
   const navigate = useNavigate()
   const Monthly = () => {
-    navigate('/monthly')
+    navigate('/monthlyPack')
   }
   const Yearly = () => {
-    navigate('/yearly')
+    navigate('/yearlyPack')
+  }
+  const Free = () => {
+    navigate('/freeTrial')
   }
 
   return (
@@ -34,7 +37,7 @@ const PricingPage = () => {
 
                   <div class="card">
 
-                    <div class="card-header bg-success py-3">
+                    <div class="card-header bg-success py-3" >
                       <p class="text-uppercase small mb-2 text-white"><strong>DEMO</strong></p>
                       <h5 class="mb-0 text-white">Try Free for 15 days</h5>
                     </div>
@@ -48,7 +51,7 @@ const PricingPage = () => {
                     </div>
 
                     <div class="card-footer bg-white py-3">
-                      <button type="button" class="btn btn-success btn-sm">Free Trial</button>
+                      <button type="button" class="btn bg-success btn-sm text-white" >Free Trial</button>
                     </div>
 
                   </div>
@@ -76,7 +79,7 @@ const PricingPage = () => {
                     </div>
 
                     <div class="card-footer bg-white py-3">
-                      <button type="button" class="btn btn-primary btn-sm" onClick={Monthly}>Buy now</button>
+                      <button type="button" class="btn bg-primary btn-sm text-white"  onClick={Monthly}>Buy now</button>
                     </div>
 
                   </div>
@@ -89,9 +92,9 @@ const PricingPage = () => {
                 <div class="col-lg-3 col-md-6 mb-4">
 
 
-                  <div class="card ">
+                  <div class="card  ">
 
-                    <div class="card-header bg-warning py-3">
+                    <div class="card-header bg-warning py-3" >
                       <p class="text-uppercase small mb-2 text-white"><strong>Yearly</strong></p>
                       <h5 class="mb-0 text-white">$70</h5>
                     </div>
@@ -107,7 +110,7 @@ const PricingPage = () => {
                     </div>
 
                     <div class="card-footer bg-white py-3">
-                      <button type="button" class="btn btn-warning btn-sm text-white" onClick={Yearly}>Buy now</button>
+                      <button type="button" class="btn bg-warning btn-sm text-white" onClick={Yearly}>Buy now</button>
                     </div>
 
                   </div>

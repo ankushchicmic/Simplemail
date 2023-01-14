@@ -51,7 +51,7 @@ const PricingPage = () => {
                     </div>
 
                     <div class="card-footer bg-white py-3">
-                      <button type="button" class="btn bg-success btn-sm text-white" >Free Trial</button>
+                      <button type="button" class="btn bg-success btn-sm text-white"  onClick={Free} >Free Trial</button>
                     </div>
 
                   </div>

@@ -68,7 +68,7 @@
     font-size: x-large;
 }
 
-#card1-footer {
+.card1-footer {
     margin-top: 2rem;
 }
 
@@ -110,6 +110,8 @@
 #card2-footer {
     margin-top: 2rem;
 }
+
+
 
 
 .card3 {

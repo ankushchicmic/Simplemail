@@ -10,7 +10,7 @@ function FreePack() {
     <Nav1/>
     <div id='div'>
         <main id='Free-Pack-Body'>
-          <div class="container-free">
+          <div className="container-free">
         
            <h3>Get Access To The All Features Free For 30 Days </h3>
           </div>

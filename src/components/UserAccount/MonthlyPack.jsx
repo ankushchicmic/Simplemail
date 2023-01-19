@@ -16,7 +16,7 @@ function MonthlyPack() {
       <Nav1 />
       <div id='div'>
         <main id='Monthly-Pack-Main'>
-          <div class="container-monthly">
+          <div className="container-monthly">
             <h3 id="heading1">Get Access To The All Features  For 30 Days </h3>
           </div>
           <PayPalButton />

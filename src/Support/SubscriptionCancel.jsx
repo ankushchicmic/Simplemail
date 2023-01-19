@@ -24,23 +24,23 @@ function CancelSubscription() {
     <div id='subscription-body'>
        <form id='SubscriptionForm'>
         <h1 id='Subscription-header'>Cancellation Subscription</h1>
-  <div class="form-group">
+  <div className="form-group">
     <label >Name</label>
-    <input type="text" name='name' class="form-control" id="exampleFormControlInput1" placeholder="Enter Name" onChange={handleChange}/>
+    <input type="text" name='name' className="form-control" id="exampleFormControlInput1" placeholder="Enter Name" onChange={handleChange}/>
   </div><br/>
-  <div class="form-group">
+  <div className="form-group">
     <label >PayPal Email address</label>
-    <input type="email" name='email' class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={handleChange}/>
+    <input type="email" name='email' className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={handleChange}/>
   </div><br/>
   <label >Select Subscription Type You Want To Cancel</label>
-  <select class="form-control" onChange={handleChange}>
+  <select className="form-control" onChange={handleChange}>
   <option  value="" disabled selected hidden>Choose Option</option>
   <option  value="Monthly">Monthly</option>
   <option  value="Yearly">Yearly</option>
 </select><br/>
-  <div class="form-group">
+  <div className="form-group">
     <label>Reason For Cancellation</label>
-    <textarea name='message' class="form-control" id="exampleFormControlTextarea1" rows="5" onChange={handleChange}></textarea>
+    <textarea name='message' className="form-control" id="exampleFormControlTextarea1" rows="5" onChange={handleChange}></textarea>
   </div>
   <div id='button'><button className='btn btn bg-primary text-white'>Submit</button></div>
 </form>

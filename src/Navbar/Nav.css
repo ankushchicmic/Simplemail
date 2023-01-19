@@ -1,0 +1,11 @@
+#nav{
+    background-color: #ECE3CC;
+    height: 4.5rem;
+}
+.btn2{
+    height: 2.6rem;
+    width: 5rem;
+    background-color:'#B2A296' ;
+    border-radius: 8px;
+    font-weight: bold;
+}

@@ -20,10 +20,16 @@ const PricingPage = () => {
   return (
     <>
       <Nav1 />
+      <div class="pricing-header">
+        <label>Our Pricing</label>
+      </div>
+
       <div className='div'>
-        <main class="">
+
+        <main class="main-body">
+
           <div class="container ">
-            <h4 class="mb-4 text-center  "><strong className='price'>Our Pricing</strong></h4>
+
             <section class="text-center">
 
 
@@ -32,26 +38,25 @@ const PricingPage = () => {
               <div class="row gx-lg-5">
 
 
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4 ">
 
-
-                  <div class="card">
-
-                    <div class="card-header bg-success py-3" >
-                      <p class="text-uppercase small mb-2 text-white"><strong>DEMO</strong></p>
-                      <h5 class="mb-0 text-white">Try Free for 15 days</h5>
+                  <div className='bg-img'></div>
+                  <div class="card1">
+                    <div className='head bg-success text-white' id='header-card1'>
+                      <h3 className='h3'>Free</h3>
+                      <h2>$0</h2>
                     </div>
-
-                    <div class="card-body">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Feature</li>
-                        <li class="list-group-item">Feature</li>
-                        <li class="list-group-item">Feature</li>
+                    <div id='body-card1'>
+                      <ul>
+                        <li>Compose AI</li>
+                        <li>Summarise </li>
+                        <li>AI Reply</li>
+                        <li>Custom Reply
+                        </li>
                       </ul>
                     </div>
-
-                    <div class="card-footer bg-white py-3">
-                      <button type="button" class="btn bg-success btn-sm text-white" >Free Trial</button>
+                    <div id='card1-footer'>
+                      <button type="button" class="btn5 bg-success btn-sm text-white" onClick={Free}>Buy now</button>
                     </div>
 
                   </div>
@@ -62,25 +67,26 @@ const PricingPage = () => {
                 <div class="col-lg-3 col-md-6 mb-4">
 
 
-                  <div class="card border ">
+                  <div class="card2 ">
 
-                    <div class="card-header bg-primary py-3">
-                      <p class="text-uppercase small mb-2 text-white"><strong>Monthly</strong></p>
-                      <h5 class="mb-0 text-white">$6.79</h5>
+                    <div className='head bg-primary text-white' id='header-card2'>
+                      <h3 className='h3'>Monthly</h3>
+                      <h2>$6.99</h2>
                     </div>
-
-                    <div class="card-body">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Feature</li>
-                        <li class="list-group-item">Feature</li>
-                        <li class="list-group-item">Feature</li>
-                        {/* <li class="list-group-item">Feature</li> */}
+                    <div id='body-card2'>
+                      <ul>
+                        <li> Compose AI </li>
+                        <li>Summarise </li>
+                        <li>AI Reply</li>
+                        <li>Custom Reply
+                        </li>
                       </ul>
                     </div>
-
-                    <div class="card-footer bg-white py-3">
-                      <button type="button" class="btn bg-primary btn-sm text-white"  onClick={Monthly}>Buy now</button>
+                    <div id='card2-footer'>
+                      <button type="button" class="btn6 bg-primary btn-sm text-white" onClick={Monthly}>Buy now</button>
                     </div>
+
+
 
                   </div>
 
@@ -92,27 +98,23 @@ const PricingPage = () => {
                 <div class="col-lg-3 col-md-6 mb-4">
 
 
-                  <div class="card  ">
-
-                    <div class="card-header bg-warning py-3" >
-                      <p class="text-uppercase small mb-2 text-white"><strong>Yearly</strong></p>
-                      <h5 class="mb-0 text-white">$70</h5>
+                  <div class="card3">
+                    <div className='head bg-warning text-white' id='header-card3'>
+                      <h3 className='h3'>Yearly</h3>
+                      <h2>$70</h2>
                     </div>
-
-                    <div class="card-body ">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Feature</li>
-                        <li class="list-group-item">Feature</li>
-                        <li class="list-group-item">Feature</li>
-                        {/* <li class="list-group-item">Feature</li>
-                  <li class="list-group-item">Feature</li> */}
+                    <div id='body-card3'>
+                      <ul>
+                        <li>Compose AI</li>
+                        <li>Summarise </li>
+                        <li>AI Reply</li>
+                        <li>Custom Reply
+                        </li>
                       </ul>
                     </div>
-
-                    <div class="card-footer bg-white py-3">
-                      <button type="button" class="btn bg-warning btn-sm text-white" onClick={Yearly}>Buy now</button>
+                    <div id='card3-footer'>
+                      <button type="button" class="btn7 bg-warning btn-sm text-white" onClick={Yearly}>Buy now</button>
                     </div>
-
                   </div>
 
 
@@ -124,8 +126,9 @@ const PricingPage = () => {
 
           </div>
         </main>
-        <Footer />
+
       </div>
+      <Footer />
     </>
   );
 };

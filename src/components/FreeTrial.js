@@ -3,7 +3,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import './monthly.css'
 import Nav1 from '../Navbar/Nav1';
 
-const YearlyPayPalButton = () => {
+const FreePayPalButton = () => {
 
   const [success, setSuccess] = useState(false);
   const [ErrorMessage, setErrorMessage] = useState("");
@@ -13,12 +13,10 @@ const YearlyPayPalButton = () => {
       .create({
         purchase_units: [
           {
-
-            description: "yearly subscription",
-
+            description: "monthly subscription",
             amount: {
               currency_code: "USD",
-              value: 70,
+              value: 6.79,
             },
           },
         ],
@@ -46,7 +44,6 @@ const YearlyPayPalButton = () => {
   };
   return (
     <>
-     
       <div className='payment'>
         <div className='container'>
           <PayPalScriptProvider
@@ -54,7 +51,7 @@ const YearlyPayPalButton = () => {
               "client-id": "AdvvMAUbk5-ZygBTbbv_IUyV-Cy0upeEJU7gax9fFA1czPezd8rlYxZedTDLNpz10R-HxKiiNkqACgXB",
             }}
           >
-            {/* <PayPalButtons style={{ layout: "horizontal" }} /> */}
+            {/* <PayPalButtons className='pay' style={{ layout: "horizontal" }} /> */}
             <PayPalButtons
               style={{ layout: "horizontal" }}
               createOrder={createOrder}
@@ -70,6 +67,4 @@ const YearlyPayPalButton = () => {
   )
 };
 
-
-export default YearlyPayPalButton;
-
+export default FreePayPalButton;

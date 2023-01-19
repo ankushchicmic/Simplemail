@@ -1,0 +1,65 @@
+#yearly-div {
+    width: 100%;
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+
+#Yearly-Pack-Main {
+    margin-top: 2rem;
+    max-width: 50vw;
+    width: 100%;
+
+    background-color: #f5f3ef;
+    ;
+    margin-bottom: 2rem;
+}
+
+.container {
+    text-align: center;
+
+}
+
+#Yearly-Pack-Body {
+    text-align: center;
+
+}
+
+#heading1 {
+    margin-top: 1rem;
+}
+
+#yearly-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.stripe-Payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: red;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.stripe-Payment h3 a {
+    text-decoration: none;
+    color: #f5f3ef;
+}
+
+.href {
+    text-decoration: none;
+    color: white;
+}
+
+.href:hover {
+    color: white;
+}

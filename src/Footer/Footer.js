@@ -4,7 +4,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 function Footer() {
   return (
    <>
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+    <MDBFooter className='text-center text-lg-start text-white ' style={{backgroundColor:" black"}}>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
@@ -50,6 +50,31 @@ function Footer() {
               <p>
                 <a href='#!' className='text-reset'>
                  AI mail
+                </a>
+              </p>
+             
+             
+            </MDBCol>
+            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Support</h6>
+              <p>
+                <a href='/feedback' className='text-reset'>
+                 FeedBack
+                </a>
+              </p>
+              <p>
+                <a href='/business' className='text-reset'>
+                 Business
+                </a>
+              </p>
+              <p>
+                <a href='/cancelSubscription' className='text-reset'>
+                 Cancellation Subscription
+                </a>
+              </p>
+              <p>
+                <a href='' className='text-reset'>
+                  Simplemail Not Working
                 </a>
               </p>
              

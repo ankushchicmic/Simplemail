@@ -1,0 +1,61 @@
+#div {
+    width: 100%;
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+}
+
+
+#Monthly-Pack-Main {
+    margin-top: 2rem;
+    max-width: 50vw;
+    width: 100%;
+
+    background-color: #f5f3ef;
+    ;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.container-monthly {
+    text-align: center;
+
+
+}
+
+#Monthly-Pack-Body {
+    text-align: center;
+
+
+}
+
+#heading1 {
+    margin-top: 1rem;
+}
+
+
+.stripe-Payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 35%;
+    width: 30%;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+.monthly-link {
+    text-decoration: none;
+    color: white;
+}
+
+.monthly-link:hover {
+    color: white;
+}

@@ -1,0 +1,28 @@
+#div{
+    width: 100%;
+    height: 70vh;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#Free-Pack-Body{
+    margin-top: 2rem;
+  max-width: 50vw;
+  width: 100%;
+  height: 60vh;
+  background-color: #f5f3ef;
+}
+
+.container-free{
+    text-align: center;
+   
+  
+}
+#FreePack-Body{
+    text-align: center;
+   
+}

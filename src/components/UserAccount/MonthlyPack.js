@@ -1,88 +1,38 @@
 import React from "react";
 import Nav1 from "../../Navbar/Nav1";
 import Footer from "../../Footer/Footer";
-import "./Style.css";
+import "./MonthlyPack.css";
 import { useNavigate } from 'react-router-dom';
+import PayPalButton from "../Monthly";
+
 
 function MonthlyPack() {
-    const navigate = useNavigate()
-    const Buy = ()=>{
-        navigate('/monthly')
-    }
+  const navigate = useNavigate()
+  const Buy = () => {
+    navigate('/monthly')
+  }
   return (
     <>
       <Nav1 />
-      <div className="div">
-        <main class="">
-          <div class="container ">
-            <section class="text-center ">
-              <div class="row gx-lg-5 ">
-                <div class="col-lg-3 col-md-6 mb-4 mt-4">
-                  <div class="card ">
-                    <div class="card-header bg-primary py-3">
-                      <p class="text-uppercase small mb-2 text-white">
-                        <strong>Monthly</strong>
-                      </p>
-                      <h5 class="mb-0 text-white">$6.79</h5>
-                    </div>
-                    <div className="body1">
-                      <h3 style={{ color: "blue" }}>
-                        Get Access To The All Features For 30 Days
-                      </h3>
-                    </div>
-
-                    <div class="card-footer bg-white py-3">
-                      <button
-                        type="button"
-                        class="btn bg-primary btn-sm text-white"
-                        onClick={Buy}
-                      >
-                        Buy Now
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 mb-4 mt-4">
-                  <div class="card  ">
-                    <div class="card-header bg-primary py-3">
-                      <p class="text-uppercase small mb-2 text-white">
-                        <strong>Expires In</strong>
-                      </p>
-                      <h5 class="mb-0 text-white">Days</h5>
-                    </div>
-
-                    <div class="card-body ">
-                      <h3 style={{ color: "blue" }}>
-                        Your Monthly Pack Will Expires In 30 Days .
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4 mt-4">
-                  <div class="card  ">
-                    <div class="card-header bg-primary py-3">
-                      <p class="text-uppercase small mb-2 text-white">
-                        <strong>Click On The Button</strong>
-                      </p>
-                      <h5 class="mb-0 text-white"> Cancel Membership</h5>
-                    </div>
-
-                    <div class="card-body ">
-                      <div class="">
-                        <button className="btn btn bg-primary text-white">
-                          Cancle Membership
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+      <div id='div'>
+        <main id='Monthly-Pack-Main'>
+          <div class="container-monthly">
+            <h3 id="heading1">Get Access To The All Features  For 30 Days </h3>
           </div>
+          <PayPalButton />
+          <a className='monthly-link' href="https://buy.stripe.com/test_fZebLUebW5gN5gI145">   <div className="stripe-Payment">Stripe Payment</div></a>
+          <div id='Monthly-Pack-Body'>
+            <h3>Your Monthly Pack Will Expires In 30 Days.</h3>
+
+          </div>
+          <div id="button">
+            <button className="btns btn bg-danger text-white">Cancel MemberShip</button>
+          </div>
+
         </main>
-        <Footer />
+
       </div>
+      <Footer />
     </>
   );
 }

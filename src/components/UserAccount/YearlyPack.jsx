@@ -15,7 +15,7 @@ function YearlyPack() {
       <Nav1 />
       <div id='yearly-div'>
         <main id='Yearly-Pack-Main'>
-          <div class="container">
+          <div className="container">
             <h3 id="heading1">Get Access To The All Features  For 1 Year </h3>
           </div>
 

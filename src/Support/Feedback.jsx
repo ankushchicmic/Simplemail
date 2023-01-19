@@ -23,17 +23,17 @@ function Feedback() {
     <div id='body'>
        <form id='feedbackForm'>
         <h1 id='feedback-header'>Feedback</h1>
-  <div class="form-group">
+  <div className="form-group">
     <label >Name</label>
-    <input type="text" name='name' class="form-control" id="exampleFormControlInput1" placeholder="Enter Name" onChange={handleChange}/>
+    <input type="text" name='name' className="form-control" id="exampleFormControlInput1" placeholder="Enter Name" onChange={handleChange}/>
   </div><br/>
-  <div class="form-group">
+  <div className="form-group">
     <label >Email address</label>
-    <input type="email" name='email' class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={handleChange}/>
+    <input type="email" name='email' className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={handleChange}/>
   </div><br/>
-  <div class="form-group">
+  <div className="form-group">
     <label>Message</label>
-    <textarea name='message' class="form-control" id="exampleFormControlTextarea1" rows="5" onChange={handleChange}></textarea>
+    <textarea name='message' className="form-control" id="exampleFormControlTextarea1" rows="5" onChange={handleChange}></textarea>
   </div>
   <div id='button'><button className='btn btn bg-primary text-white'>Submit</button></div>
 </form>

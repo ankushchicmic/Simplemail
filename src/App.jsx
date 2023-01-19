@@ -1,5 +1,5 @@
 import PricingPage from "./components/Pricingpage";
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, MemoryRouter } from 'react-router-dom'
 import Monthly from "./components/Monthly";
 import Yearly from "./components/Yearly";
 import FreePack from "./components/UserAccount/FreePack";
@@ -8,7 +8,7 @@ import YearlyPack from "./components/UserAccount/YearlyPack";
 import Feedback from "./Support/Feedback";
 import Business from "./Support/Business";
 import CancelSubscription from "./Support/SubscriptionCancel";
-
+import React from "react";
 
 
 
@@ -16,7 +16,7 @@ import CancelSubscription from "./Support/SubscriptionCancel";
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
+      <MemoryRouter>
 
       <Routes>
         <Route path="/" element={<PricingPage/>}/>
@@ -31,7 +31,7 @@ function App() {
        
 
         </Routes>
-      </BrowserRouter>
+      </MemoryRouter>
 
     </div>
   );

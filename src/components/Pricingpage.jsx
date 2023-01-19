@@ -20,28 +20,28 @@ const PricingPage = () => {
   return (
     <>
       <Nav1 />
-      <div class="pricing-header">
+      <div className="pricing-header">
         <label>Our Pricing</label>
       </div>
 
       <div className='div'>
 
-        <main class="main-body">
+        <main className="main-body">
 
-          <div class="container ">
+          <div className="container ">
 
-            <section class="text-center">
-
-
+            <section className="text-center">
 
 
-              <div class="row gx-lg-5">
 
 
-                <div class="col-lg-3 col-md-6 mb-4 ">
+              <div className="row gx-lg-5">
+
+
+                <div className="col-lg-3 col-md-6 mb-4 ">
 
                   <div className='bg-img'></div>
-                  <div class="card1">
+                  <div className="card1">
                     <div className='head bg-success text-white' id='header-card1'>
                       <h3 className='h3'>Free</h3>
                       <h2>$0</h2>
@@ -55,14 +55,9 @@ const PricingPage = () => {
                         </li>
                       </ul>
                     </div>
-<<<<<<< HEAD
-                    <div id='card1-footer'>
-                      <button type="button" class="btn5 bg-success btn-sm text-white" onClick={Free}>Buy now</button>
-=======
 
-                    <div class="card-footer bg-white py-3">
-                      <button type="button" class="btn bg-success btn-sm text-white"  onClick={Free} >Free Trial</button>
->>>>>>> aeed3e32282ddcce620477457eacfd1d7558cef4
+                    <div className="card-footer bg-white py-3">
+                      <button type="button" className="btn bg-success btn-sm text-white"  onClick={Free} >Free Trial</button>
                     </div>
 
                   </div>
@@ -70,10 +65,10 @@ const PricingPage = () => {
 
                 </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div className="col-lg-3 col-md-6 mb-4">
 
 
-                  <div class="card2 ">
+                  <div className="card2 ">
 
                     <div className='head bg-primary text-white' id='header-card2'>
                       <h3 className='h3'>Monthly</h3>
@@ -89,7 +84,7 @@ const PricingPage = () => {
                       </ul>
                     </div>
                     <div id='card2-footer'>
-                      <button type="button" class="btn6 bg-primary btn-sm text-white" onClick={Monthly}>Buy now</button>
+                      <button type="button" className="btn6 bg-primary btn-sm text-white" onClick={Monthly}>Buy now</button>
                     </div>
 
 
@@ -101,10 +96,10 @@ const PricingPage = () => {
 
 
 
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div className="col-lg-3 col-md-6 mb-4">
 
 
-                  <div class="card3">
+                  <div className="card3">
                     <div className='head bg-warning text-white' id='header-card3'>
                       <h3 className='h3'>Yearly</h3>
                       <h2>$70</h2>
@@ -119,7 +114,7 @@ const PricingPage = () => {
                       </ul>
                     </div>
                     <div id='card3-footer'>
-                      <button type="button" class="btn7 bg-warning btn-sm text-white" onClick={Yearly}>Buy now</button>
+                      <button type="button" className="btn7 bg-warning btn-sm text-white" onClick={Yearly}>Buy now</button>
                     </div>
                   </div>
 

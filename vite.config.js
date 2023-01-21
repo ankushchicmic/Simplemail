@@ -10,10 +10,7 @@ export default defineConfig({
     minify: false,
     rollupOptions: {
       output: {
-				// Default
-				// dir: 'dist',
-				// With laravel: laravel-app/public/js
-				dir: 'build',
+				dir: '../pricing',
 				entryFileNames: 'pricing.js',
 				assetFileNames: 'pricing.css',
 				manualChunks: undefined,

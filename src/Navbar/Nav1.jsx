@@ -20,21 +20,21 @@ function Nav1() {
   return (
     <>
       
-      <div class="nav">
+      <div className="nav">
   <input type="checkbox" id="nav-check"/>
-  <div class="nav-header">
+  <div className="nav-header">
   <img
               alt=""
               src="https://lh3.googleusercontent.com/LKDLU8ZVMsIacy8PJISNy369_lGxOAIjTy-9rxv0YKALGOMoFRsQ78dAftd8dRjNRIIjOuT4gbENGowVXpYvghA6Ag=w128-h128-e365-rj-sc0x00ffffff"
               width="75"
               height="70"
-              className="d-inline-block align-top"
+              classNameName="d-inline-block align-top"
             />
-    <div class="nav-title">
+    <div className="nav-title">
      Simplemail
     </div>
   </div>
-  <div class="nav-btn">
+  <div className="nav-btn">
     <label for="nav-check">
       <span></span>
       <span></span>
@@ -42,9 +42,9 @@ function Nav1() {
     </label>
   </div>
   
-  <div class="nav-links">
-     <button className='tut ' onClick={tut}> --&gt;back to Tutorial</button>
-      <button className='btn2 '>Logout</button>
+  <div className="nav-links">
+     <button classNameName='tut ' onClick={tut}> --&gt;back to Tutorial</button>
+      <button classNameName='btn2 '>Logout</button>
   </div>
 </div>
     </>

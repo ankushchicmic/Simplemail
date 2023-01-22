@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build --emptyOutDir",
     "serve": "vite preview"
   },
   "eslintConfig": {

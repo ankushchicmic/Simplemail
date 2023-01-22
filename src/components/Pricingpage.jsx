@@ -13,15 +13,13 @@ const PricingPage = () => {
   const Yearly = () => {
     navigate('/yearlyPack')
   }
-  const Free = () => {
-    navigate('/freeTrial')
-  }
+
 
   return (
     <>
       <Nav1 />
       <div className="pricing-header">
-        <label>Our Pricing</label>
+        <label><i class="bi bi-arrow-right"></i>Our Pricing</label>
       </div>
 
       <div className='div'>
@@ -44,7 +42,7 @@ const PricingPage = () => {
                   <div className="card1">
                     <div className='head bg-success text-white' id='header-card1'>
                       <h3 className='h3'>Free</h3>
-                      <h2>$0</h2>
+                      <h2>30 days Trial</h2>
                     </div>
                     <div id='body-card1'>
                       <ul>
@@ -56,8 +54,8 @@ const PricingPage = () => {
                       </ul>
                     </div>
 
-                    <div className="card1-footer">
-                      <button type="button" className="btn5 bg-success btn-sm text-white" onClick={Free} >Free Trial</button>
+                    <div className="card-footer ">
+                      <a href="https://mail.google.com/mail/">  <button type="button" className="btn5 bg-success btn-sm text-white" >Try free</button></a>
                     </div>
 
                   </div>

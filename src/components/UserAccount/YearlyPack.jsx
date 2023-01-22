@@ -20,8 +20,10 @@ function YearlyPack() {
           </div>
 
           <YearlyPayPalButton />
-
-          <a className='href' href="https://buy.stripe.com/test_28o17gaZK10xdNe4gi">   <div className="stripe-Payment">Stripe Payment</div></a>
+          
+          <a className='href' href="https://buy.stripe.com/eVa0066RCct46Xu9AB">   <div className="container2">Stripe Payment</div></a>
+          
+         
 
           <div id='Yearly-Pack-Body'>
             <h3>Your Monthly Pack Will Expires In 365 Days.</h3>

@@ -4,9 +4,22 @@ import Navbar from 'react-bootstrap/Navbar';
 import './Nav.css'
 
 function Nav1() {
+  async function tut() {
+    // let queryOptions = { active: true, lastFocusedWindow: true };
+
+    // let [tab] = await chrome.tabs.query(queryOptions);
+    // let internalURL = chrome.runtime.getURL('./tutorial.html');
+
+    // chrome.tabs.create(
+    //   {
+    //     url: chrome.extension.getURL('chrome-extension://epaoeoeofbdhoakmlhembafepfjgomme/tutorial.html'),
+    //   }
+    // )
+    window.open('chrome-extension://epaoeoeofbdhoakmlhembafepfjgomme/tutorial.html')
+  }
   return (
     <>
-      <Navbar  id='nav'>
+      <Navbar id='nav'>
         <Container>
           <Navbar.Brand href="https://www.simplemail.ai/">
             <img
@@ -18,6 +31,8 @@ function Nav1() {
             />
             <label className='h1' style={{ color: '   #130B0F ', margin: ".6vw" }}> Simplemail </label>
           </Navbar.Brand>
+          <button className='tut ' onClick={tut}> --&gt;back to Tutorial</button>
+
           <button className='btn2 '>Logout</button>
         </Container>
       </Navbar>

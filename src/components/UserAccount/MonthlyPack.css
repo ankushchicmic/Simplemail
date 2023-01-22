@@ -39,16 +39,17 @@
 }
 
 
-.stripe-Payment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container3 {
+  
     margin-bottom: 2rem;
-    margin-left: 35%;
-    width: 30%;
+    background-color: red;
     padding: 8px;
-    border-radius: 10px;
-
+    border-radius: 6px;
+   
+    text-align: center;
+    font-size: 25px;
+    width: 96%;
+    margin-left: .8rem;
 }
 
 .monthly-link {

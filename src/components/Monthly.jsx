@@ -58,7 +58,7 @@ const PayPalButton = () => {
     <>
 
       <div className='payment'>
-        <div className='box'>
+        <div className='container'>
           <PayPalScriptProvider
             options={{
               "client-id": "AdvvMAUbk5-ZygBTbbv_IUyV-Cy0upeEJU7gax9fFA1czPezd8rlYxZedTDLNpz10R-HxKiiNkqACgXB",
@@ -73,7 +73,7 @@ const PayPalButton = () => {
                 color: 'gold',
                 layout: 'horizontal',
                 label: 'subscribe',
-
+                                     
               }}
               createSubscription={createSubscription}
               onApprove={onApprove}

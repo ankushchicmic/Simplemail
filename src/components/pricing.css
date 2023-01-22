@@ -12,6 +12,17 @@
 
 }
 
+.tut {
+    margin-left: 4vw;
+    height: 2.6rem;
+
+    background-color: '#B2A296';
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+
 .main-body {
 
     backdrop-filter: blur(2px);
@@ -68,7 +79,7 @@
     font-size: x-large;
 }
 
-.card1-footer {
+.card-footer {
     margin-top: 2rem;
 }
 
@@ -110,8 +121,6 @@
 #card2-footer {
     margin-top: 2rem;
 }
-
-
 
 
 .card3 {

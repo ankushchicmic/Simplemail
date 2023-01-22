@@ -2,7 +2,7 @@
 
 .div {
     /* background-image: url("C:\Users\HP\Downloads\robot logo NO BG.png"); */
-    height: 100%;
+   
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffffff;
@@ -12,14 +12,7 @@
 
 }
 
-.tut {
-    margin-left: 4vw;
-    height: 2.6rem;
 
-    background-color: '#B2A296';
-    border-radius: 8px;
-    font-weight: bold;
-}
 
 
 

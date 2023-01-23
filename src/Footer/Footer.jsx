@@ -58,17 +58,17 @@ function Footer() {
               <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
                 <h6 className='text-uppercase fw-bold mb-4'>Support</h6>
                 <p>
-                  <a href='/feedback' className='text-reset'>
+                  <a href='/pricing/feedback' className='text-reset'>
                     FeedBack
                   </a>
                 </p>
                 <p>
-                  <a href='/business' className='text-reset'>
+                  <a href='/pricing/business' className='text-reset'>
                     Business
                   </a>
                 </p>
                 <p>
-                  <a href='/cancelSubscription' className='text-reset'>
+                  <a href='/pricing/cancelSubscription' className='text-reset'>
                     Cancellation Subscription
                   </a>
                 </p>

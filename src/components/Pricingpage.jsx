@@ -8,10 +8,10 @@ import { useNavigate } from 'react-router-dom';
 const PricingPage = () => {
   const navigate = useNavigate()
   const Monthly = () => {
-    navigate('/monthlyPack')
+    navigate('/pricing/monthlyPack')
   }
   const Yearly = () => {
-    navigate('/yearlyPack')
+    navigate('/pricing/yearlyPack')
   }
 
 

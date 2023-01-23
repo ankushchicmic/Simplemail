@@ -19,15 +19,15 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          <Route path="/" element={<PricingPage />} />
-          <Route path="/monthly" element={<Monthly />} />
-          <Route path="/yearly" element={<Yearly />} />
-          <Route path="/freeTrial" element={<FreePack />} />
-          <Route path="/monthlyPack" element={<MonthlyPack />} />
-          <Route path="/yearlyPack" element={<YearlyPack />} />
-          <Route path="/feedback" element={<Feedback />} />
-          <Route path="/business" element={<Business />} />
-          <Route path="/cancelSubscription" element={<CancelSubscription />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/pricing/monthly" element={<Monthly />} />
+          <Route path="/pricing/yearly" element={<Yearly />} />
+          <Route path="/pricing/freeTrial" element={<FreePack />} />
+          <Route path="/pricing/monthlyPack" element={<MonthlyPack />} />
+          <Route path="/pricing/yearlyPack" element={<YearlyPack />} />
+          <Route path="/pricing/feedback" element={<Feedback />} />
+          <Route path="/pricing/business" element={<Business />} />
+          <Route path="/pricing/cancelSubscription" element={<CancelSubscription />} />
 
 
         </Routes>

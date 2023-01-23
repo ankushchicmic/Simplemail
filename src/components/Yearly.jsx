@@ -67,6 +67,7 @@ const YearlyPayPalButton = () => {
             }}
           >
             {/* <PayPalButtons className='pay' style={{ layout: "horizontal" }} /> */}
+            <table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo"/></td></tr></table>
             <PayPalButtons
               style={{
                 shape: 'rect',

@@ -1,69 +1,122 @@
 #yearly-div {
-    width: 100%;
-
-    background-color: white;
+  
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 5rem;
-}
-
-
-#Yearly-Pack-Main {
-    margin-top: 2rem;
-    max-width: 50vw;
-    width: 100%;
-
-    background-color: #f5f3ef;
-    ;
-    margin-bottom: 2rem;
-}
-
-.container {
-    text-align: center;
-
-}
-
-#Yearly-Pack-Body {
-    text-align: center;
-
-}
-
-#heading1 {
-    margin-top: 1rem;
-}
-
-#yearly-button {
+      margin-bottom: 5rem; 
+      flex-direction: column;
+    
+ }
+ .head5{
+   font-size: 60px;
+   background: -webkit-linear-gradient(rgb(71, 159, 192), rgb(34, 33, 33));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ .head5 h2{
+   font-weight: bold;
+ }
+ #paypal-card{
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ #body-paypal{
+   position: relative;
+   bottom: 4rem;
+   top: .1rem;
+ }
+ .container2{
+   margin-top: 2rem;
+ }
+ #stripe-card1{
+  
+   margin-bottom: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ .stripe{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
-}
-
-.container2 {
+    align-items: center;
+    margin-bottom: 3rem;
+ }
+ .center{
+   font-weight: bolder;
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 60px;
+   background: -webkit-linear-gradient(rgb(223, 100, 100), rgb(51, 51, 51));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ 
+ .payment-head{
+   margin-top: 1rem;
+   margin-bottom: 3rem;
+   text-align: center;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 60px;
+   background: -webkit-linear-gradient(rgb(223, 100, 100), rgb(51, 51, 51));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ 
+ .body1{
+   max-width: 1000px;
+   width: 100%;
+   flex-wrap: wrap;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 5rem;
+   background-color:#ECE3CC;
+   border-radius: 11px;
+   
   
-    margin-bottom: 2rem;
-    background-color: red;
-    padding: 8px;
-    border-radius: 6px;
-    height: 3.3rem;
-    text-align: center;
-    font-size: 25px;
-    width: 96%;
-    margin-left: .8rem;
-}
-
-
-
-.href {
-    text-decoration: none;
-    color: white;
-   
-   
-}
-
-.href:hover {
-    color: white;
-}
-
-
+ }
+ .or{
+   width: 200px;
+   height: 150px;
+   text-align: center;
+   font-size: 60px;
+   background: -webkit-linear-gradient(rgb(223, 100, 100), rgb(51, 51, 51));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-top: 2rem;
+   font-weight: bolder;
+ }
+ 
+ @media (max-width:600px) {
+   .body1 {
+    display: flex;
+    flex-wrap: wrap;
+   }
+ }
+ @media (max-width:374px) {
+   .body1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   }
+ }
+ 
+ .card5{
+   width: 18rem;
+   height: 28rem;
+   background-color: #f5f3ef;
+   color: #130B0F;
+   margin-right: 20px;
+   margin-top: 1rem;
+ }
+ 
+ #body-paypal{
+  
+   position: relative;
+   top: -3rem;
+ }

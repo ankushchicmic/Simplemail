@@ -5,36 +5,58 @@ import './YearlyPack.css'
 import { useNavigate } from 'react-router-dom';
 import YearlyPayPalButton from '../Yearly';
 
+
 function YearlyPack() {
-  const navigate = useNavigate()
-  const Buy = () => {
-    navigate('/yearly')
-  }
+ 
   return (
     <>
       <Nav1 />
-      <div id='yearly-div'>
-        <main id='Yearly-Pack-Main'>
-          <div className="container">
-            <h3 id="heading1">Get Access To The All Features  For 1 Year </h3>
-          </div>
+       <div id='yearly-div'>
+       <h2 className='payment-head'>Choose Payment Option</h2>
+<div className='body1'>
+<div className="row1 gx-lg-5">
+<div className="col-lg-3 col-md-6 mb-4 ">
+  <div className="card5 ">
+    <div className='head5 ' id='paypal-card'>
+    <h2 >Click To Pay</h2>
+    <i className="fa-solid fa-arrow-down"></i>
+    </div>
+    <div id='body-paypal'>
+    <YearlyPayPalButton />
+    
+    </div>
 
-          <YearlyPayPalButton />
+   
+  </div>
+</div>
+</div>
+           
+           <div><h2 className='or'>Or</h2></div>
+
+
+            <div className="row1 gx-lg-5">
+<div className="col-lg-3 col-md-6 mb-4 ">
+  <div className="card5 ">
+    <div className='head5' id='stripe-card1'>
+     <h2>Click To Pay</h2>
+     <i className="fa-solid fa-arrow-down"></i>
+    </div>
+    <div id='body-card1'>
           
-          <a className='href' href="https://buy.stripe.com/eVa0066RCct46Xu9AB">   <div className="container2">Stripe Payment</div></a>
+          <a className='href' href={`https://buy.stripe.com/eVa0066RCct46Xu9AB?`}>   <div className="container2"><img src='https://media.designrush.com/inspiration_images/135143/conversions/_1510164528_150_social-mobile.jpg'  width="255"
+              height="87"/></div></a>
           
-         
+    </div>
 
-          <div id='Yearly-Pack-Body'>
-            <h3>Your Monthly Pack Will Expires In 365 Days.</h3>
-          </div>
-          <div id="yearly-button">
-            <button className="btns btn bg-danger text-white">Cancel MemberShip</button>
-          </div>
+   
+  </div>
+</div>
+</div>
+    
 
-        </main>
+</div>
 
-      </div>
+</div>
       <Footer />
     </>
   )

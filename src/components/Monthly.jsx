@@ -41,7 +41,7 @@ const PayPalButton = () => {
   const createSubscription = function (data, actions) {
     return actions.subscription.create({
       /* Creates the subscription */
-      plan_id: 'P-0L703587YA7278832MPAUJAI'
+      plan_id: 'P-8MY22973ER585953EMPHETQY'
     });
   }
   const onApprove = function (data, actions) {
@@ -61,7 +61,7 @@ const PayPalButton = () => {
         <div className='container'>
           <PayPalScriptProvider
             options={{
-              "client-id": "AdvvMAUbk5-ZygBTbbv_IUyV-Cy0upeEJU7gax9fFA1czPezd8rlYxZedTDLNpz10R-HxKiiNkqACgXB",
+              "client-id": "ATYIVw6_KQFxA-3_aug7g6pWUzH40PTYs4shMem6jHsca3nWY4E56ktkRMjzXM6f9a6wyroVbVa9pl4B",
               "vault": "true",
               "intent": "subscription"
             }}

@@ -1,122 +1,86 @@
-#yearly-div {
+.a{
+  margin-top: 5rem;
+  background-color: aliceblue;
+  width: 50%;
+}
+
+.payment-page h1{
+  text-align: center;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3.2vw;
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 1.5rem;
   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      margin-bottom: 5rem; 
-      flex-direction: column;
-    
- }
- .head5{
-   font-size: 60px;
-   background: -webkit-linear-gradient(rgb(71, 159, 192), rgb(34, 33, 33));
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
- .head5 h2{
-   font-weight: bold;
- }
- #paypal-card{
-  
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
- }
- #body-paypal{
-   position: relative;
-   bottom: 4rem;
-   top: .1rem;
- }
- .container2{
-   margin-top: 2rem;
- }
- #stripe-card1{
-  
-   margin-bottom: 3rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
- }
- .stripe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
- }
- .center{
-   font-weight: bolder;
-   text-align: center;
-   margin-bottom: 2rem;
-   font-size: 60px;
-   background: -webkit-linear-gradient(rgb(223, 100, 100), rgb(51, 51, 51));
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
+}
+.payment-page{
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+  width: 100%;
+  height:100%;
  
- .payment-head{
-   margin-top: 1rem;
-   margin-bottom: 3rem;
-   text-align: center;
-   font-weight: bold;
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 60px;
-   background: -webkit-linear-gradient(rgb(223, 100, 100), rgb(51, 51, 51));
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
+
+  /* background: linear-gradient(327deg,#2d1a1f 0%, #2d1a1f 29.7%, #b1aba2 30%, #b1aba2 100%);  */
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stripe-payment1{
+ width: 50%;
  
- .body1{
-   max-width: 1000px;
-   width: 100%;
-   flex-wrap: wrap;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 5rem;
-   background-color:#ECE3CC;
-   border-radius: 11px;
-   
-  
- }
- .or{
-   width: 200px;
-   height: 150px;
-   text-align: center;
-   font-size: 60px;
-   background: -webkit-linear-gradient(rgb(223, 100, 100), rgb(51, 51, 51));
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   margin-top: 2rem;
-   font-weight: bolder;
- }
+ background-color: aliceblue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.stripe-payment1:hover{
+  transform: scale(1.1);
+}
+
+ .stripe-logo{
+  background-color: rgb(16, 88, 151);
+   font-family: 'Inter';
+  color: white;
+  font-weight: bolder;
+}
+
+.stripe-payment1 a{
+ text-decoration: none;
+ background-color: #b1aba2;
+ width: 47rem;
+ height: 6vh;
+}
+
+
+
+.stripe-div{
+  width:100%;
+  text-align: center;
+  height: 32.5vh;
  
- @media (max-width:600px) {
-   .body1 {
-    display: flex;
-    flex-wrap: wrap;
-   }
- }
- @media (max-width:374px) {
-   .body1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-   }
- }
- 
- .card5{
-   width: 18rem;
-   height: 28rem;
-   background-color: #f5f3ef;
-   color: #130B0F;
-   margin-right: 20px;
-   margin-top: 1rem;
- }
- 
- #body-paypal{
-  
-   position: relative;
-   top: -3rem;
- }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hr{
+  width: 50%;
+  height:1rem;
+  color: black;
+  background-color: aliceblue;
+}
+.a:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+

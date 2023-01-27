@@ -1,133 +1,161 @@
-import React from 'react';
-import Footer from '../Footer/Footer';
-import Nav1 from '../Navbar/Nav1';
-import './pricing.css'
-import { useNavigate } from 'react-router-dom';
-
+import React from "react";
+import Footer from "../Footer/Footer";
+import Nav1 from "../Navbar/Nav1";
+import "./pricing.css";
+import { useNavigate } from "react-router-dom";
 
 const PricingPage = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const Monthly = () => {
-    navigate('/pricing/monthlyPack')
-  }
+    navigate("/pricing/monthlyPack");
+  };
   const Yearly = () => {
-    navigate('/pricing/yearlyPack')
-  }
-
+    navigate("/pricing/yearlyPack");
+  };
 
   return (
     <>
+     
+    
       <Nav1 />
-      <div className="pricing-header">
-        <label><i class="bi bi-arrow-right"></i>Our Pricing</label>
-      </div>
+     
 
-      <div className='div'>
+<div className="main-body-1">
 
-        <main className="main-body">
+<div className="as">
+<div className="accordion"> 
+  
+  <p className="accordion-toggle">Start 30 days free trail now!</p>
+  <div className="accordion-content">
+    <div className="accordion-inner"> 
+     <ul className="package-list3" >
+      <li>COMPOSE AI  ✅</li>
+      <li>SUMMARISE  ✅</li>
+      <li> AI  REPLY ✅</li>
+      <li>CUSTOM REPLY   ✅</li>
+     
+     </ul>
+     <div className="free-button">
+     <div className="main">
+     <a href="https://mail.google.com/mail/"><button className="btna">Try Free</button></a>
+ </div>
+     </div>
+     
+    </div>
+  </div>
+</div>
 
-          <div className="container ">
+  
 
-            <section className="text-center">
-
-
-
-
-              <div className="row gx-lg-5">
-
-
-                <div className="col-lg-3 col-md-6 mb-4 ">
-
-                  <div className='bg-img'></div>
-                  <div className="card1">
-                    <div className='head bg-success text-white' id='header-card1'>
-                      <h3 className='h3'>Free</h3>
-                      <h2>30 days Trial</h2>
-                    </div>
-                    <div id='body-card1'>
-                      <ul>
-                        <li>Compose AI</li>
-                        <li>Summarise </li>
-                        <li>AI Reply</li>
-                        <li>Custom Reply
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="card-footer ">
-                      <a href="https://mail.google.com/mail/">  <button type="button" className="btn5 bg-success btn-sm text-white" >Try free</button></a>
-                    </div>
-
-                  </div>
-
-
-                </div>
-
-                <div className="col-lg-3 col-md-6 mb-4">
-
-
-                  <div className="card2 ">
-
-                    <div className='head bg-primary text-white' id='header-card2'>
-                      <h3 className='h3'>Monthly</h3>
-                      <h2>$6.99</h2>
-                    </div>
-                    <div id='body-card2'>
-                      <ul>
-                        <li> Compose AI </li>
-                        <li>Summarise </li>
-                        <li>AI Reply</li>
-                        <li>Custom Reply
-                        </li>
-                      </ul>
-                    </div>
-                    <div id='card2-footer'>
-                      <button type="button" className="btn6 bg-primary btn-sm text-white" onClick={Monthly}>Buy now</button>
-                    </div>
-
-
-
-                  </div>
-
-
-                </div>
-
-
-
-                <div className="col-lg-3 col-md-6 mb-4">
-
-
-                  <div className="card3">
-                    <div className='head bg-warning text-white' id='header-card3'>
-                      <h3 className='h3'>Yearly</h3>
-                      <h2>$70</h2>
-                    </div>
-                    <div id='body-card3'>
-                      <ul>
-                        <li>Compose AI</li>
-                        <li>Summarise </li>
-                        <li>AI Reply</li>
-                        <li>Custom Reply
-                        </li>
-                      </ul>
-                    </div>
-                    <div id='card3-footer'>
-                      <button type="button" className="btn7 bg-warning btn-sm text-white" onClick={Yearly}>Buy now</button>
-                    </div>
-                  </div>
-
-
-                </div>
-
-
+</div>
+<div className='wrapper grid-container grid-x grid-margin-x align-top align-justify'>
+ 
+<div className='package1 small-12 medium-4 cell'>
+    <div className='package-name'>Choose  Plan</div>
+    
+    <hr className="hr"/>
+    <ul className="package-list2">
+      <li>
+      COMPOSE AI 
+      </li>
+      <li>
+        SUMMARISE AI
+      </li>
+      <li>
+       AI REPLY
+       
+      </li>
+     
+    </ul>
+         
+  
               </div>
-            </section>
 
-          </div>
-        </main>
+  <div className='package2 small-12 medium-4 cell'>
+    <div className='package-name'>MONTHLY</div>
+   
+    <div className='package-price1 scale '>$6.99</div>
+    <div ></div>
+    <hr/>
+    <ul className="package-list1">
+      <li>
+      <strong><span className="span-color"></span>✅</strong>
+      </li>
+      <li>
+        <strong><span className="span-color"></span>✅</strong>
+      </li>
+      <li>
+        <strong><span className="span-color"></span>✅</strong>
+       
+      </li>
+      <li><strong><span className="span-color"></span></strong>
+      ✅
+      </li>
+      <li><strong><span className="span-color"></span></strong>
+      ✅
+      </li>
+      <li><strong><span className="span-color"></span></strong>
+      ✅
+      </li>
+      <li><strong><span className="span-color"></span></strong>
+      ✅
+      </li>
+     
+      
+      
+      
+    </ul>
+         
+    <div className="monthly-button">
+                <button className="monthly-buy"    onClick={Monthly}> Buy Now</button>
+              </div>
+  
 
-      </div>
-      <Footer />
+  </div>
+  
+  <div className='package business recommended small-12 medium-4 cell'>
+  <div className="ribbon ribbon-top-right"><span>Save 20%</span></div>
+    <div className='package-name'>YEARLY</div>
+    <div className='package-price scale'>$70</div>
+    
+    <div style={{marginTop:"25px"}}></div>
+    <hr/>
+    <ul className="package-list">
+    <li>
+        <strong><span className="span-color"></span>✅</strong>
+      </li>
+      <li>
+        <strong><span  className="span-color" ></span>✅</strong>
+      </li>
+      <li>
+        <strong><span className="span-color" ></span>✅</strong>
+       
+      </li>
+      <li>
+      <strong><span className="span-color" ></span>✅ </strong>
+      </li>
+      <li>
+      <strong><span className="span-color" ></span>✅ </strong>
+      </li>
+      <li>
+      <strong><span className="span-color"></span>✅ </strong>
+      </li>
+      <li>
+      <strong><span className="span-color" ></span>✅</strong>
+      </li>
+     
+      
+    </ul>
+    <div className="yearly-button">
+                <button className="yearly-buy"    onClick={Yearly}> Buy Now</button>
+              </div>
+              
+  </div>
+  
+</div>
+
+</div>
+      <Footer/>
     </>
   );
 };

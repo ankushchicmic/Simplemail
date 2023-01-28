@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import './monthly.css'
 import Nav1 from '../Navbar/Nav1';
+import { useEffect } from 'react';
+import axios from 'axios'
 
 const PayPalButton = () => {
+  const apiUrl = "https://localhost:3000"; //local
+
+//const apiUrl = "https://api.simplemail.ai"; //local
 
   const [success, setSuccess] = useState(false);
   const [ErrorMessage, setErrorMessage] = useState("");
@@ -15,16 +20,24 @@ const PayPalButton = () => {
       plan_id: 'P-0L703587YA7278832MPAUJAI'
     });
   }
-  const onApprove = function (data, actions) {
+  const onApprove = async function (data, actions) {
     console.log(data, "data")
-    localStorage.setItem("subscriptionid", data.subscriptionID)
-    alert(data.subscriptionID); // You can add optional success message for the subscriber here
+    
+   await axios.post(apiUrl+'/subscribe',{userid:localStorage.getItem('id'),subid:data.subscriptionID,method:"payment"})
+    .then(res=>{console.log(res)
+      alert("subscribed")
+      
+    });
+    window.open("https://mail.google.com/mail/")
+    
   }
 
   //capture likely error
   const onError = (data, actions) => {
     setErrorMessage("An Error occured with your payment ");
+    alert("An Error occured with your payment")
   };
+  
   return (
     <>
 
@@ -49,7 +62,7 @@ const PayPalButton = () => {
               }}
               createSubscription={createSubscription}
               onApprove={onApprove}
-            />
+              onError={onError}            />
           </PayPalScriptProvider>
         </div>
 

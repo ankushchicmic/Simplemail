@@ -1,18 +1,37 @@
-import React from "react";
-import Footer from "../Footer/Footer";
-import Nav1 from "../Navbar/Nav1";
-import "./pricing.css";
-import { useNavigate } from "react-router-dom";
+
+import React from 'react';
+import Footer from '../Footer/Footer';
+import Nav1 from '../Navbar/Nav1';
+import './pricing.css'
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 
 const PricingPage = () => {
-  const navigate = useNavigate();
+  const Location=useLocation();
+  const[id,setid]=useState("")
+  const navigate = useNavigate()
   const Monthly = () => {
-    navigate("/pricing/monthlyPack");
-  };
+    navigate('/pricing/monthlyPack', {
+      userid:id
+    })
+  }
   const Yearly = () => {
-    navigate("/pricing/yearlyPack");
-  };
+    navigate('/pricing/yearlyPack',{
+      usrid:id
+    })
+  }
 
+useEffect(()=>{
+  const queryparams=new URLSearchParams(Location.search);
+  setid(queryparams.get('id'))
+  localStorage.setItem("userid",queryparams.get('id') )
+
+
+
+
+},[])
   return (
     <>
      

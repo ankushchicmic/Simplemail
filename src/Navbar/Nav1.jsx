@@ -5,16 +5,7 @@ import './Nav.css'
 
 function Nav1() {
   async function tut() {
-    // let queryOptions = { active: true, lastFocusedWindow: true };
-
-    // let [tab] = await chrome.tabs.query(queryOptions);
-    // let internalURL = chrome.runtime.getURL('./tutorial.html');
-
-    // chrome.tabs.create(
-    //   {
-    //     url: chrome.extension.getURL('chrome-extension://epaoeoeofbdhoakmlhembafepfjgomme/tutorial.html'),
-    //   }
-    // )
+   
     window.open('chrome-extension://epaoeoeofbdhoakmlhembafepfjgomme/tutorial.html')
   }
   return (
@@ -43,7 +34,7 @@ function Nav1() {
   </div>
   
   <div className="nav-links">
-     <button className='tut ' onClick={tut}> --&gt;back to Tutorial</button>
+     <button className='tut ' onClick={tut}> Back to Tutorial</button>
       <button className='btn2 '>Logout</button>
   </div>
 </div>

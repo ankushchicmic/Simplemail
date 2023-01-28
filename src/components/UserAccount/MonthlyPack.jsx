@@ -2,36 +2,31 @@ import React from "react";
 import Nav1 from "../../Navbar/Nav1";
 import Footer from "../../Footer/Footer";
 import "./MonthlyPack.css";
-import { useNavigate } from 'react-router-dom';
+
 import PayPalButton from "../Monthly";
 
 
 function MonthlyPack() {
-  const navigate = useNavigate()
-  const Buy = () => {
-    navigate('/monthly')
-  }
+  
   return (
     <>
       <Nav1 />
-      <div id='div'>
-        <main id='Monthly-Pack-Main'>
-          <div className="container-monthly">
-            <h3 id="heading1">Get Access To The All Features  For 30 Days </h3>
-          </div>
-          <PayPalButton />
-          <a className='monthly-link' href="https://buy.stripe.com/fZe14a3Fq2SubdK288">  <div className="container3">Stripe Payment</div></a>
-          <div id='Monthly-Pack-Body'>
-            <h3>Your Monthly Pack Will Expires In 30 Days.</h3>
+   
+  
+<div className="payment-page">
+<h1>Choose a Payment Option</h1>
+<div className="a">
+  <PayPalButton/>
+  </div>
+  <hr className="hr"/>
+ <div className="stripe-payment1">
+  <div className="stripe-div">
+  <a className='href' href={`https://buy.stripe.com/fZe14a3Fq2SubdK288?`}><h2 className="stripe-logo">Stripe</h2></a>
+  </div>
+ 
+ </div>
 
-          </div>
-          <div id="button">
-            <button className="btns btn bg-danger text-white">Cancel MemberShip</button>
-          </div>
-
-        </main>
-
-      </div>
+  </div>
       <Footer />
     </>
   );

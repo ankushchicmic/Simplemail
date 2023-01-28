@@ -28,8 +28,6 @@ function App() {
           <Route path="/pricing/feedback" element={<Feedback />} />
           <Route path="/pricing/business" element={<Business />} />
           <Route path="/pricing/cancelSubscription" element={<CancelSubscription />} />
-
-
         </Routes>
       </BrowserRouter>
 

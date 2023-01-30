@@ -18,10 +18,9 @@ function MonthlyPack() {
   <PayPalButton/>
   </div>
   <hr className="hr1"/>
- <div className="stripe1-payment1">
- <a className='href1' href={`https://buy.stripe.com/fZe14a3Fq2SubdK288?`}><div className="stripe-div1">
- <h2 className="stripe-logo1">Stripe</h2>
-  </div>
+ <div className="stripe-payment">
+ <a className='href1' href={`https://buy.stripe.com/fZe14a3Fq2SubdK288?`}>
+ <img src='https://educist.net/assets/img/payment-methods/stripe.png'/>
   </a>
  </div>
 

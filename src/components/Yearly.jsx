@@ -20,7 +20,7 @@ const YearlyPayPalButton = () => {
   }
   const onApprove = async function (data, actions) {
     console.log(data, "data")
-    await axios.post(apiUrl+'/subscribe',{userid:localStorage.getItem('id'),subid:data.subscriptionID,method:"yearly/paypal"})
+    await axios.post(apiUrl+'/subscribe',{userid:localStorage.getItem('id'),subid:data.subscriptionID,method:"Yearly/Paypal"})
     .then(res=>{console.log(res)
       alert("subscribed")
       

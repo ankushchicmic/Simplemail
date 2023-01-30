@@ -38,7 +38,7 @@ useEffect(()=>{
 
 //freetrial
 async function freetrial(){
-  await axios.post(apiUrl+'/subscribe',{userid:localStorage.getItem('id'),subid:"",method:"free"})
+  await axios.post(apiUrl+'/freesubscription',{userid:localStorage.getItem('id'),method:"Freetrial/Stripe"})
   .then(res=>{console.log(res)
     
     

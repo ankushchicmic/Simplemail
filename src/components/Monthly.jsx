@@ -6,9 +6,9 @@ import { useEffect } from 'react';
 import axios from 'axios'
 
 const PayPalButton = () => {
-  const apiUrl = "https://localhost:3000"; //local
+ // const apiUrl = "https://localhost:3000"; //local
 
-//const apiUrl = "https://api.simplemail.ai"; //local
+const apiUrl = "https://api.simplemail.ai"; //local
 
   const [success, setSuccess] = useState(false);
   const [ErrorMessage, setErrorMessage] = useState("");

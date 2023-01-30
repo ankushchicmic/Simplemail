@@ -9,6 +9,7 @@ import Feedback from "./Support/Feedback";
 import Business from "./Support/Business";
 import CancelSubscription from "./Support/SubscriptionCancel";
 import React from "react";
+import SuccessPayment from "./SuccessPayment/SuccessPayment";
 
 
 
@@ -28,6 +29,8 @@ function App() {
           <Route path="/pricing/feedback" element={<Feedback />} />
           <Route path="/pricing/business" element={<Business />} />
           <Route path="/pricing/cancelSubscription" element={<CancelSubscription />} />
+          <Route path="/pricing/monthly/paymentSuccess" element={<SuccessPayment />} />
+          <Route path="/pricing/yearly/paymentSuccess" element={<SuccessPayment />} />
         </Routes>
       </BrowserRouter>
 

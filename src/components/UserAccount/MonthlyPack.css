@@ -1,13 +1,13 @@
-.a{
+.a1{
   margin-top: 5rem;
   background-color: aliceblue;
   width: 50%;
 }
 
-.asdf h1{
+.payment-page h2{
   text-align: center;
- 
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 3.2vw;
   background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
   -webkit-background-clip: text;
@@ -16,65 +16,64 @@
   top: 1.5rem;
   
 }
-.payment-page{
+.payment-page1{
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+
   width: 100%;
   height:100%;
-  background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
-  /* background: linear-gradient(327deg,#2d1a1f 0%, #2d1a1f 29.7%, #b1aba2 30%, #b1aba2 100%);  */
   box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.stripe-payment1{
+.stripe1-payment1{
+  box-sizing: border-box;
  width: 50%;
- 
+ height: 32.5vh;
  background-color: aliceblue;
  display: flex;
  justify-content: center;
  align-items: center;
 
 }
-.stripe-payment1:hover{
+.stripe1-payment1:hover{
   transform: scale(1.1);
 }
 
- .stripe-logo{
-  background-color: rgb(16, 88, 151);
+ .stripe-logo1{
+  background-color:blue;
    font-family: 'Inter';
   color: white;
   font-weight: bolder;
-}
-
-.stripe-payment1 a{
- text-decoration: none;
- background-color: #b1aba2;
- width: 47rem;
- height: 6vh;
+  font-size: 40px;
 }
 
 
 
-.stripe-div{
-  width:100%;
-  text-align: center;
-  height: 33vh;
- 
+.href1{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aliceblue;
+  text-decoration: none;
 }
 
-.hr{
-  width: 50%;
-  height:1rem;
-  color: black;
-  background-color: aliceblue;
+.stripe-div1{
+ width: 12vw;
+ height: 22vh;
+ background-color: blue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
-.a:hover{
+
+.hr1{
+  width: 50%;
+  height:3px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+.a1:hover{
   transform: scale(1.1);
 }
 

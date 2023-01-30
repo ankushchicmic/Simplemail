@@ -2,7 +2,7 @@ import React from 'react'
 import Nav1 from '../../Navbar/Nav1'
 import Footer from '../../Footer/Footer'
 import './YearlyPack.css'
-import { useNavigate } from 'react-router-dom';
+
 import YearlyPayPalButton from '../Yearly';
 
 
@@ -11,16 +11,16 @@ function YearlyPack() {
   return (
     <>
       <Nav1 />
-      <div className="payment-page">
+      <div className="payment-page2">
 <h1>Choose a Payment Option</h1>
-<div className="a">
+<div className="a2">
   <YearlyPayPalButton/>
   </div>
-  <hr className="hr"/>
- <div className="stripe-payment1">
-  <div className="stripe-div">
-  <a className='href' href={`https://buy.stripe.com/eVa0066RCct46Xu9AB?`}><h2 className="stripe-logo">Stripe</h2></a>
-  </div>
+  <hr className="hr2"/>
+ <div className="stripe-payment2">
+ <a className='href2' href={`https://buy.stripe.com/eVa0066RCct46Xu9AB?`}><div className="stripe-div2">
+ <h2 className="stripe-logo2">Stripe</h2>
+  </div></a>
  
  </div>
 

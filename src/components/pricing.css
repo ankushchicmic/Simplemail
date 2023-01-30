@@ -1,10 +1,6 @@
 
 
 .main-body-1{
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWzkNeWB0se6TEqIufSfn2P_d5_FvtmbCufA&usqp=CAU");
- background-repeat: no-repeat;
- background-size: 100% 100%;  */
-
 background-size: 100% 150%;
  background: linear-gradient(327deg,#2d1a1f 0%, #2d1a1f 29.7%, #b1aba2 30%, #b1aba2 100%); 
 }
@@ -31,7 +27,7 @@ background-size: 100% 150%;
  transition: all 0.25s ease-in;
  position: relative;
  width: 25rem;
- height: 41rem;
+ height: 32rem;
  overflow: hidden;
  margin-top: 10rem;
  margin-bottom: 20rem;
@@ -59,7 +55,7 @@ margin-top: 2rem;
  transition: all 0.25s ease-in;
  position: relative;
  width: 25rem;
- height: 39rem;
+ height: 30rem;
  overflow: hidden;
  margin-top: 10rem;
  margin-bottom: 20rem;
@@ -178,7 +174,6 @@ margin-top: 2rem;
 }
 
 .package:hover .package-name {
- 
  font-weight: 600;
 }
 
@@ -217,23 +212,13 @@ margin-top: 2rem;
 }
 
 .package-list {
- list-style: '✔️';
  padding: 0;
  text-align: left;
-
-}
-
-.package-list li {
-
-
 }
 
 .package-list li::before {
  position: relative;
 }
-
-
-
 
 .yearly-button{
  display: flex;
@@ -241,6 +226,7 @@ margin-top: 2rem;
  align-items: center;
  margin-top: 1rem;
 }
+
 .yearly-buy{
  background: rgb(67,119,219);
  background: linear-gradient(90deg, rgba(67,119,219,1) 0%, rgba(44,144,195,1) 41%, rgba(0,255,209,1) 100%);
@@ -300,8 +286,6 @@ left: -78px;
  border-bottom: none;
 }
 
-
-
 .hr{
  background-color: #000000;
  color: #000;
@@ -310,6 +294,7 @@ left: -78px;
  position: relative;
 
 }
+
 .as{
  display: flex;
  justify-content: center;
@@ -446,9 +431,6 @@ left: -78px;
  top: 30px;
  transform: rotate(45deg);
 }
-/* .span-color{
- color:#3f7354;
-} */
 
 .free-trial2{
  position: relative;

@@ -1,6 +1,4 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
 import './Nav.css'
 
 function Nav1() {
@@ -15,8 +13,8 @@ function Nav1() {
   <input type="checkbox" id="nav-check"/>
   <div className="nav-header">
   <img
-              alt=""
-              src="https://lh3.googleusercontent.com/LKDLU8ZVMsIacy8PJISNy369_lGxOAIjTy-9rxv0YKALGOMoFRsQ78dAftd8dRjNRIIjOuT4gbENGowVXpYvghA6Ag=w128-h128-e365-rj-sc0x00ffffff"
+              alt="logo"
+              src="https://static.wixstatic.com/media/a3cb14_1c1fd63a3adc4208a5e3ca5917814765~mv2.png/v1/fill/w_70,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%20robot%20logo%20NO%20BG_edited.png"
               width="75"
               height="70"
               className="d-inline-block align-top"

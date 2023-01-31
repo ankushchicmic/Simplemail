@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import axios from 'axios'
 
 const PayPalButton = () => {
- // const apiUrl = "https://localhost:3000"; //local
+  //const apiUrl = "https://localhost:3000"; //local
 
 const apiUrl = "https://api.simplemail.ai"; //local
 
@@ -17,6 +17,7 @@ const apiUrl = "https://api.simplemail.ai"; //local
   const createSubscription = function (data, actions) {
     return actions.subscription.create({
       /* Creates the subscription */
+      custom_id:localStorage.getItem('id'),
       plan_id: 'P-8MY22973ER585953EMPHETQY'
     });
   }

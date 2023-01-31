@@ -5,7 +5,7 @@ import Nav1 from '../Navbar/Nav1';
 import axios from 'axios';
 
 const YearlyPayPalButton = () => {
- // const apiUrl = "https://localhost:3000"; //local
+  //const apiUrl = "https://localhost:3000"; //local
 
  const apiUrl = "https://api.simplemail.ai"; //local
   const [success, setSuccess] = useState(false);
@@ -15,7 +15,7 @@ const YearlyPayPalButton = () => {
   const createSubscription = function (data, actions) {
     return actions.subscription.create({
       /* Creates the subscription */
-      plan_id: 'P-0DV02314472850406MPHEVDQ'
+      plan_id: 'P-55G43614BF500581CMPMUF2Y'
     });
   }
   const onApprove = async function (data, actions) {
@@ -44,7 +44,6 @@ const YearlyPayPalButton = () => {
               "intent": "subscription"
             }}
           >
-            
              <PayPalButtons
               style={{
                 shape: 'rect',

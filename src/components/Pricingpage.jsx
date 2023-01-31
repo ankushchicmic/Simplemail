@@ -63,7 +63,7 @@ async function freetrial(){
      <ul className="package-list3" >
       <li>COMPOSE AI  ✅</li>
       <li>SUMMARISE  ✅</li>
-      <li> AI  REPLY ✅</li>
+      <li> AI  REPLY &nbsp;&nbsp;&nbsp; ✅</li>
       <li>CUSTOM REPLY   ✅</li>
      
      </ul>

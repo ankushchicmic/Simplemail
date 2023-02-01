@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Footer from '../Footer/Footer'
 import Nav1 from '../Navbar/Nav1'
 import './Feedback.css'
-
+import axios from 'axios'
 function Feedback() {
 
     const[feedback , setFeedback] = useState({
@@ -35,7 +35,7 @@ function Feedback() {
     <label>Message</label>
     <textarea name='message' className="form-control" id="exampleFormControlTextarea1" rows="5" onChange={handleChange}></textarea>
   </div>
-  <div id='button'><button className='btn btn bg-primary text-white'>Submit</button></div>
+  <div id='button'><button className='btn btn bg-primary text-white' >Submit</button></div>
 </form>
 </div>
 <Footer/>

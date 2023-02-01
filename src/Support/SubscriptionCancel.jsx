@@ -2,16 +2,21 @@ import React, {useState} from 'react'
 import Footer from '../Footer/Footer'
 import Nav1 from '../Navbar/Nav1'
 import './SubscriptionCancel.css'
-
+import axios from 'axios'
 function CancelSubscription() {
+  const apiUrl = "https://localhost:3000"; //local
 
+  // const apiUrl = "https://api.simplemail.ai"; //local
     const[subscription, setSubscription] = useState({
         name:"",
         email:"",
         subscriptionPlan:"",
         message :""
     })
-
+    async function cancelsub(e){
+      e.preventDefault();
+      await axios.post(apiUrl+'/cancelsub',{userid:localStorage.getItem('id'),reason:subscription.message})
+      }
     const handleChange = (e)=>{
         setSubscription({...subscription , [e.target.name]: e.target.value})
       }
@@ -42,7 +47,7 @@ function CancelSubscription() {
     <label>Reason For Cancellation</label>
     <textarea name='message' className="form-control" id="exampleFormControlTextarea1" rows="5" onChange={handleChange}></textarea>
   </div>
-  <div id='button'><button className='btn btn bg-primary text-white'>Submit</button></div>
+  <div id='button'><button className='btn btn bg-primary text-white' onClick={cancelsub}>Submit</button></div>
 </form>
 </div>
 <Footer/>

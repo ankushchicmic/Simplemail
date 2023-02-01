@@ -9,9 +9,9 @@ import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 const PricingPage = () => {
-  //const apiUrl = "https://localhost:3000"; //local
+const apiUrl = "https://localhost:3000"; //local
 
-  const apiUrl = "https://api.simplemail.ai"; //local
+ // const apiUrl = "https://api.simplemail.ai"; //local
   const Location=useLocation();
   const[id,setid]=useState("")
   const navigate = useNavigate()
@@ -38,12 +38,22 @@ useEffect(()=>{
 
 //freetrial
 async function freetrial(){
+  if(localStorage.getItem('id')=='null'){
+    alert("Please login")
+
+}else{
   await axios.post(apiUrl+'/freesubscription',{userid:localStorage.getItem('id'),method:"Freetrial/Stripe"})
   .then(res=>{console.log(res)
-    
+  
+    if(!res.data.update){
+      window.open("https://mail.google.com/mail/")
+
+    }else{
+      alert(res.data.update.message)
+    }
     
   });
-  window.open("https://mail.google.com/mail/")
+}
 } 
   return (
     <>

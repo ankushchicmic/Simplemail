@@ -19,7 +19,7 @@ function YearlyPack() {
   <hr className="hr2"/>
  <div className="stripe-payment2">
  <a className='href2' href={`https://buy.stripe.com/eVa0066RCct46Xu9AB?`}>
-  <img src='https://educist.net/assets/img/payment-methods/stripe.png'/>
+  <img src='https://media.designrush.com/inspiration_images/135143/conversions/_1510164528_150_social-mobile.jpg'/>
  </a>
  
  </div>

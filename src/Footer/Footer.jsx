@@ -73,7 +73,7 @@ function Footer() {
                   </a>
                 </p>
                 <p>
-                  <a href='mailto:hello@simplemail.ai' className='text-reset'>
+                  <a href='mailto:help@simplemail.ai' className='text-reset'>
                     Simplemail Not Working
                   </a>
                 </p>
@@ -91,7 +91,7 @@ function Footer() {
                 </p>
                 <p>
                   <MDBIcon icon="envelope" className="me-3" />
-                  hello@simplemail.ai
+                  help@simplemail.ai
                 </p>
                 <p>
                   <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88

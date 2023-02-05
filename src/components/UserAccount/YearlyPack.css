@@ -6,6 +6,13 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+  border: 2px solid rgb(128, 126, 126);
+  height: 25vh;
+}
+
+.paypal{
+  position: relative;
+  top: -2rem;
 }
 .a2:hover{
   transform: scale(1.1);
@@ -71,6 +78,7 @@
  display: flex;
  justify-content: center;
  align-items: center;
+ border: 2px solid rgb(128, 126, 126);
  
 }
 
@@ -114,8 +122,8 @@
  align-items: center;
 }
 .stripe-payment2 a img{
-  width: 90%;
-  height: 25vh;
+  width: 97%;
+  height: 17vh;
 }
 
 

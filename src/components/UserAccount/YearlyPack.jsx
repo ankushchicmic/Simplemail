@@ -14,12 +14,14 @@ function YearlyPack() {
       <div className="payment-page2">
 <h1>Choose Payment Option</h1>
 <div className="a2">
+<div className="paypal">
   <YearlyPayPalButton/>
+  </div>
   </div>
   <hr className="hr2"/>
  <div className="stripe-payment2">
- <a className='href2' href={`https://buy.stripe.com/eVa0066RCct46Xu9AB?`}>
-  <img src='https://educist.net/assets/img/payment-methods/stripe.png'/>
+ <a className='href2' href={`https://buy.stripe.com/eVa0066RCct46Xu9AB?client_reference_id=${localStorage.getItem("id")}`}>
+  <img src='https://media.designrush.com/inspiration_images/135143/conversions/_1510164528_150_social-mobile.jpg'/>
  </a>
  
  </div>

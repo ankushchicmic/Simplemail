@@ -16,6 +16,8 @@ function CancelSubscription() {
     async function cancelsub(e){
       e.preventDefault();
       await axios.post(apiUrl+'/cancelsub',{userid:localStorage.getItem('id'),reason:subscription.message})
+      .then(alert("email successfully sent"))
+      .catch(err=>console.log(err))
       }
     const handleChange = (e)=>{
         setSubscription({...subscription , [e.target.name]: e.target.value})

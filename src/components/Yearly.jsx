@@ -15,16 +15,16 @@ const YearlyPayPalButton = () => {
   const createSubscription = function (data, actions) {
     return actions.subscription.create({
       /* Creates the subscription */
+      custom_id:localStorage.getItem('id'),
       plan_id: 'P-55G43614BF500581CMPMUF2Y'
     });
   }
   const onApprove = async function (data, actions) {
     console.log(data, "data")
-    await axios.post(apiUrl+'/subscribe',{userid:localStorage.getItem('id'),subid:data.subscriptionID,method:"Yearly/Paypal"})
-    .then(res=>{console.log(res)
+    
       alert("subscribed")
       
-    });
+    
     window.open("https://mail.google.com/mail/")
   }
 
@@ -39,7 +39,7 @@ const YearlyPayPalButton = () => {
         <div className='container'>
           <PayPalScriptProvider
             options={{
-              "client-id": "ATYIVw6_KQFxA-3_aug7g6pWUzH40PTYs4shMem6jHsca3nWY4E56ktkRMjzXM6f9a6wyroVbVa9pl4B",
+              "client-id": "AUMwusyquj_wKP4zm3MjuSsKcVUN-FwgRXpbtYDmV8zbWZDBNGcdwbh4rMeXgX3b8qt0NpjzDnSdZKLt",
               "vault": "true",
               "intent": "subscription"
             }}

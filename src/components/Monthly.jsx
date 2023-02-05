@@ -6,9 +6,7 @@ import { useEffect } from 'react';
 import axios from 'axios'
 
 const PayPalButton = () => {
-  //const apiUrl = "https://localhost:3000"; //local
-
-const apiUrl = "https://api.simplemail.ai"; //local
+  
 
   const [success, setSuccess] = useState(false);
   const [ErrorMessage, setErrorMessage] = useState("");
@@ -18,17 +16,17 @@ const apiUrl = "https://api.simplemail.ai"; //local
     return actions.subscription.create({
       /* Creates the subscription */
       custom_id:localStorage.getItem('id'),
-      plan_id: 'P-8MY22973ER585953EMPHETQY'
+      plan_id: 'P-8MY22973ER585953EMPHETQY' 
+     // plan_id: 'P-0L703587YA7278832MPAUJAI' //testing
     });
   }
   const onApprove = async function (data, actions) {
     console.log(data, "data")
     
-   await axios.post(apiUrl+'/subscribe',{userid:localStorage.getItem('id'),subid:data.subscriptionID,method:"Monthly/Paypal"})
-    .then(res=>{console.log(res)
+   
       alert("subscribed")
       
-    });
+    
     window.open("https://mail.google.com/mail/")
     
   }
@@ -46,7 +44,8 @@ const apiUrl = "https://api.simplemail.ai"; //local
         <div className='container'>
           <PayPalScriptProvider
             options={{
-              "client-id": "ATYIVw6_KQFxA-3_aug7g6pWUzH40PTYs4shMem6jHsca3nWY4E56ktkRMjzXM6f9a6wyroVbVa9pl4B",
+            "client-id": "AUMwusyquj_wKP4zm3MjuSsKcVUN-FwgRXpbtYDmV8zbWZDBNGcdwbh4rMeXgX3b8qt0NpjzDnSdZKLt",
+          //testing // "client-id": "AdvvMAUbk5-ZygBTbbv_IUyV-Cy0upeEJU7gax9fFA1czPezd8rlYxZedTDLNpz10R-HxKiiNkqACgXB",
               "vault": "true",
               "intent": "subscription"
             }}

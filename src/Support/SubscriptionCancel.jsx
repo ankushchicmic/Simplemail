@@ -9,13 +9,13 @@ function CancelSubscription() {
   // const apiUrl = "https://api.simplemail.ai"; //local
     const[subscription, setSubscription] = useState({
         name:"",
-        email:"",
+        paymentMethod:"",
         subscriptionPlan:"",
         message :""
     })
     async function cancelsub(e){
       e.preventDefault();
-      await axios.post(apiUrl+'/cancelsub',{userid:localStorage.getItem('id'),reason:subscription.message})
+      await axios.post(apiUrl+'/cancelsub',{userid:localStorage.getItem('id'),method:subscription.paymentMethod})
       .then(alert("email successfully sent"))
       .catch(err=>console.log(err))
       }
@@ -35,10 +35,12 @@ function CancelSubscription() {
     <label >Name</label>
     <input type="text" name='name' className="form-control" id="exampleFormControlInput1" placeholder="Enter Name" onChange={handleChange}/>
   </div><br/>
-  <div className="form-group">
-    <label >PayPal Email address</label>
-    <input type="email" name='email' className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" onChange={handleChange}/>
-  </div><br/>
+  <label >Payment Method</label>
+  <select className="form-control" onChange={handleChange}>
+  <option  value="" disabled selected hidden>Choose Option</option>
+  <option  value="PayPal">PayPal</option>
+  <option  value="Stripe">Stripe</option>
+</select><br/>
   <label >Select Subscription Type You Want To Cancel</label>
   <select className="form-control" onChange={handleChange}>
   <option  value="" disabled selected hidden>Choose Option</option>

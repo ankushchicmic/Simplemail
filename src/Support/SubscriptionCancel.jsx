@@ -36,7 +36,7 @@ function CancelSubscription() {
     <input type="text" name='name' className="form-control" id="exampleFormControlInput1" placeholder="Enter Name" onChange={handleChange}/>
   </div><br/>
   <label >Payment Method</label>
-  <select className="form-control" onChange={handleChange}>
+  <select id="paymentMethod" name='paymentMethod' className="form-control" onChange={handleChange}>
   <option  value="" disabled selected hidden>Choose Option</option>
   <option  value="PayPal">PayPal</option>
   <option  value="Stripe">Stripe</option>

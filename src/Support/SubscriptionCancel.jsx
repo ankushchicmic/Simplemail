@@ -4,9 +4,9 @@ import Nav1 from '../Navbar/Nav1'
 import './SubscriptionCancel.css'
 import axios from 'axios'
 function CancelSubscription() {
-  const apiUrl = "https://localhost:3000"; //local
+  // const apiUrl = "https://localhost:3000"; //local
 
-  // const apiUrl = "https://api.simplemail.ai"; //local
+  const apiUrl = "https://api.simplemail.ai"; //local
     const[subscription, setSubscription] = useState({
         name:"",
         paymentMethod:"",

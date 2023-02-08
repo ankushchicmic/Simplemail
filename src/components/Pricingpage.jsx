@@ -9,9 +9,9 @@ import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 const PricingPage = () => {
-const apiUrl = "https://localhost:3000"; //local
+// const apiUrl = "https://localhost:3000"; //local
 
- // const apiUrl = "https://api.simplemail.ai"; //local
+ const apiUrl = "https://api.simplemail.ai"; //local
   const Location=useLocation();
   const[id,setid]=useState("")
   const navigate = useNavigate()

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import Footer from '../Footer/Footer'
 import Nav1 from '../Navbar/Nav1'
 import './SubscriptionCancel.css'
@@ -13,12 +13,25 @@ function CancelSubscription() {
         subscriptionPlan:"",
         message :""
     })
+    useEffect(()=>{
+      const queryparams=new URLSearchParams(window.location.search);
+      localStorage.setItem("id",queryparams.get('id') )
+      console.log(queryparams.get('id'),"id",window.location.search)
+      
+    
+    
+    },[])
     async function cancelsub(e){
       e.preventDefault();
+      if(localStorage.getItem('id')=='null'){
+        alert("Please login")
+    
+    }else{
       await axios.post(apiUrl+'/cancelsub',{userid:localStorage.getItem('id'),method:subscription.paymentMethod})
       .then(alert("email successfully sent"))
       .catch(err=>console.log(err))
       }
+    }
     const handleChange = (e)=>{
         setSubscription({...subscription , [e.target.name]: e.target.value})
       }

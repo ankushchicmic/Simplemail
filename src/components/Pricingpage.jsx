@@ -9,11 +9,12 @@ import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 const PricingPage = () => {
-// const apiUrl = "https://localhost:3000"; //local
+//const apiUrl = "https://localhost:3000"; //local
 
  const apiUrl = "https://api.simplemail.ai"; //local
   const Location=useLocation();
   const[id,setid]=useState("")
+  const[Check,setCheck]=useState(null)
   const navigate = useNavigate()
   const Monthly = () => {
     navigate('/pricing/monthlyPack', {
@@ -25,14 +26,22 @@ const PricingPage = () => {
       usrid:id
     })
   }
+async function freetrialcheck(id){
+  const check=await axios.post(apiUrl+"/check",{userid:id})
+  .catch(err=>console.log(err));
+  console.log(check.data);
+setCheck(check.data)
+if(check.data){
+  document.getElementById('accordion').style.visibility = "hidden";
+}
+}
 
 useEffect(()=>{
   const queryparams=new URLSearchParams(Location.search);
   setid(queryparams.get('id'))
   localStorage.setItem("id",queryparams.get('id') )
   console.log(queryparams.get('id'),"id")
-  
-
+freetrialcheck(queryparams.get('id'));
 
 },[])
 
@@ -65,7 +74,7 @@ async function freetrial(){
 <div className="main-body-1">
 
 <div className="as">
-<div className="accordion"> 
+<div className="accordion" id="accordion"> 
   
   <p className="accordion-toggle">Start 30 days free trail now!</p>
   <div className="accordion-content">

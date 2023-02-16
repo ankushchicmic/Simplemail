@@ -33,7 +33,7 @@ function Nav1() {
   
   <div className="nav-links">
      <button className='tut ' onClick={tut}> Back to Tutorial</button>
-      <button className='btn2 '>Logout</button>
+      {/* <button className='btn2 '>Logout</button> */}
   </div>
 </div>
     </>

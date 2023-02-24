@@ -9,8 +9,6 @@ import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import { ReactComponent as Layer } from '../assets/circle_vector.svg'
-import { ReactComponent as Badge } from '../assets/badge.svg'
-import BadgeHeader from '../assets/badge_header.png'
 
 const PricingPage = () => {
   //const apiUrl = "https://localhost:3000"; //local
@@ -81,7 +79,7 @@ const PricingPage = () => {
         <div className="container">
           <div className='text-center mb-5'>
             <h1 className='h1'>Ready to get  started?</h1>
-            <span> Choose a plan tailored to your needs</span>
+            <span>Choose a plan tailored to your needs</span>
           </div>
 
           <div className="choose_plan">
@@ -158,7 +156,7 @@ const PricingPage = () => {
                   </div>
                   <hr />
                   <div className="plan_footer text-center">
-                    <button className="btn btn-md btn-outline-primary radius-40" onClick={Monthly}>Get Choose Plan</button>
+                    <button className="btn btn-md btn-outline-primary radius-40" onClick={Monthly}>Choose Plan</button>
                   </div>
                 </div>
               </div>
@@ -197,7 +195,7 @@ const PricingPage = () => {
                   </div>
                   <hr />
                   <div className="plan_footer text-center">
-                    <button className="btn btn-md btn-outline-primary radius-40" onClick={Yearly}>Get Choose Plan</button>
+                    <button className="btn btn-md btn-outline-primary radius-40" onClick={Yearly}>Choose Plan</button>
                   </div>
                 </div>
               </div>

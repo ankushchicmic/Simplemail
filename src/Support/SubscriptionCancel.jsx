@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer'
 import Nav1 from '../Navbar/Nav1'
 import './SubscriptionCancel.css'
 import axios from 'axios'
+import { ReactComponent as Layer } from '../assets/circle_vector.svg'
 function CancelSubscription() {
   // const apiUrl = "https://localhost:3000"; //local
 
@@ -41,7 +42,10 @@ function CancelSubscription() {
   return (
     <>
       <Nav1 />
-      <div id='subscription-body' className='py-lg-5 py-4'>
+      <div id='subscription-body' className='py-lg-5 py-4 position-relative'>
+        <div class="circle_layer">
+          <Layer />
+        </div>
         <div className='container'>
           <form id='SubscriptionForm'>
             <div className="row justify-content-center">
@@ -77,7 +81,7 @@ function CancelSubscription() {
                     <textarea name='message' className="form-control" id="exampleFormControlTextarea1" rows="5" onChange={handleChange}></textarea>
                   </div>
 
-                  <div id='button'><button className='btn btn-md btn-outline-primary' onClick={cancelsub}>Submit</button></div>
+                  <div id='button' className='text-center'><button className='btn btn-md btn-outline-primary' onClick={cancelsub}>Submit</button></div>
                 </div>
               </div>
             </div>
